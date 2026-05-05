@@ -30,19 +30,38 @@
 
     width: 50vw;
     height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20pt;
 
 }
 
-#editar{
+.editar{
 
     background-color: rgb(255, 255, 255);
     height: 200px;
     width: 400px;
     display: flex;
+
+}
+
+#editarNome{
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+}
+
+#editarDefesa{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
 
 }
 
@@ -53,42 +72,42 @@
 
 }
 
-#container1{
+#pericias{
 
     background-color: aqua;
     display: flex;
 
 }
 
-#container2{
+#combate{
 
     background-color: red;
     display: none;
 
 }
 
-#container3{
+#relvas{
 
     background-color: rgb(2, 177, 153);
     display: none;
 
 }
 
-#container4{
+#inventario{
 
     background-color: green;
     display: none;
 
 }
 
-#container5{
+#talentos{
 
     background-color: yellow;
     display: none;
 
 }
 
-#container6{
+#info{
 
     background-color: purple;
     display: none;

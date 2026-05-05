@@ -16,13 +16,27 @@
 
                 <h1>STATUS</h1>
 
+                <h2>NOMES</h2>
+
                 <div id="nomes" onclick="borrarFundo()">
 
                     <h3 id="nome">[NOME]</h3>
                     <h4 id="jogador">[JOGADOR]</h4>
 
                 </div>
-                
+             
+                <div class="cds">
+
+                    <h2>CDs</h2>
+
+                    <div id="defesa">
+
+
+
+                    </div>
+                    
+
+                </div>
 
 
             </div>
@@ -34,42 +48,42 @@
 
             <div id="nav">
 
-                <button>Anterior</button>
-                <button>Proximo</button>
+                <button onclick="pagina --">Anterior</button>
+                <button onclick="pagina ++">Proximo</button>
 
             </div>
 
-            <div class="container" id="container1">
+            <div class="container" id="pericias">
 
                 <h2>Pericias</h2>
 
             </div>
 
-             <div class="container" id="container2">
+             <div class="container" id="combate">
 
                 <h2>Combate</h2>
 
             </div>
 
-            <div class="container" id="container3">
+            <div class="container" id="relvas">
 
                 <h2>Relvas</h2>
 
             </div>
 
-             <div class="container" id="container4">
+             <div class="container" id="inventario">
 
                 <h2>Inventario</h2>
 
             </div>
 
-             <div class="container" id="container5">
+             <div class="container" id="talentos">
 
                 <h2>Talentos</h2>
 
             </div>
 
-             <div class="container" id="container6">
+             <div class="container" id="info">
 
                 <h2>Info</h2>
 
@@ -82,12 +96,28 @@
 
         <div class="blur" id="blur" onclick="borrarFundo()">
 
-            <div id="editar" onclick="event.stopPropagation();">
+            <div class="editar" id="editarNome" onclick="event.stopPropagation();">
 
                 <h1>Editar nome</h1>
                 
                 <input type="text" id="novoNome" placeholder="Novo nome">
                 <input type="text" id="novoJogador" placeholder="Novo jogador">
+
+                <button id="salvar" onclick="borrarFundo()">confirmar</button>
+
+            </div>
+
+            <div class="editar" id="editarDefesa" onclick="event.stopPropagation();">
+
+                <h1>Editar defesa</h1>
+                
+                <p>Calculo | 10 + Agi + Vig + Mod </p>
+
+                <!--trocar mod unico para log de mods-->
+
+                <input type="number" id="novaAgi">
+                <input type="number" id="novoVig">
+                <input type="number" id="novoMod">
 
                 <button id="salvar" onclick="borrarFundo()">confirmar</button>
 
