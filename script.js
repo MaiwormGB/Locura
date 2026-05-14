@@ -1,17 +1,37 @@
 const borrar = document.getElementById("blur");
 const nomes = document.getElementById("nomes");
 const botao = document.getElementById("salvar");
-
+let val = 0;
+console.log(val);
 
 function borrarFundo(){
 
-    
-
     const displayAtual = borrar.style.display || window.getComputedStyle(borrar).display;
+    const elementos = document.querySelectorAll('.editar');
+
+    console.log(val);
 
     if (displayAtual === "none"){
 
         borrar.style.display = "flex";
+
+        elementos.forEach(function(div) {
+            div.style.display = "none"
+        });
+
+        switch(val){
+            case 1:
+                console.log("editarNome");
+                elementos[0].style.display = 'flex';
+                break;
+            case 2:
+                console.log("editarDefesa");
+                elementos[1].style.display = 'flex';
+                break;
+             
+
+        }
+
 
     } else{
 

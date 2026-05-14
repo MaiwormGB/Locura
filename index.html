@@ -18,7 +18,7 @@
 
                 <h2>NOMES</h2>
 
-                <div id="nomes" onclick="borrarFundo()">
+                <div id="nomes" onclick="val = 1; borrarFundo();">
 
                     <h3 id="nome">[NOME]</h3>
                     <h4 id="jogador">[JOGADOR]</h4>
@@ -27,7 +27,7 @@
              
                 <h2>CDs</h2>
 
-                <div class="cds">
+                <div class="cds" onclick="val = 2; borrarFundo();">
 
                     <div class="cd" id="defesa"></div>
                     <div class="cd" id="integridade"></div>
@@ -103,7 +103,7 @@
         </div>
 
 
-        <div class="blur" id="blur" onclick="borrarFundo()">
+        <div class="blur" id="blur" onclick="val = 0; borrarFundo();">
 
             <div class="editar" id="editarNome" onclick="event.stopPropagation();">
 
